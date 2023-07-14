@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 echo "Building with version ${APP_VERSION}"
-                sleep 3
+                sleep 2
             }
         }
         stage('Test') {
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 echo 'Deploying...'
                 echo "Deploying with credentials ${APP_CREDENTIALS}"
-                sleep 3
+                sleep 2
             }
         }
         stage('Release') {
