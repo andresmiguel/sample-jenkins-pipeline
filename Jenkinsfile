@@ -16,6 +16,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'UT Testing...'
+                sleep 1
             }
         }
         stage('Deploy') {
